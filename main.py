@@ -31,3 +31,5 @@ for linha in tabela_produtos.index:
 print(tabela_ofertas)
 
 tabela_ofertas.to_excel('produtos.xlsx', index=False)
+
+print('tudo ok!')
