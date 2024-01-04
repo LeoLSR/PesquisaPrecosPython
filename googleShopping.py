@@ -37,7 +37,7 @@ def busca_google_shopping(nav,produto, termos_banidos, preco_minimo, preco_maxim
 
         if not tem_termos_banidos and tem_todos_termos_produtos:
             preco = resultado.find_element(By.CLASS_NAME, "a8Pemb").text
-            preco = preco.replace("R$", "").replace(" ", "").replace(".", "").replace(",", ".")
+            preco = preco.replace("R$", "").replace(" ", "").replace(".", "").replace(",", ".").replace('+impostos',"")
             preco = float(preco)
 
 
